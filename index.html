@@ -2,11 +2,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Travel Paradise</title>
 </head>
 <body>
+
     <header>
+        <!-- Navigation -->
         <nav>
             <a href="index.html" class="logo">
                 <img src="assets/images/logo.png" alt="Travel Paradise logo" class="logo-img">
@@ -29,12 +32,57 @@
                 </li>
             </ul>
         </nav>
+
+        <!-- Landing page for home page -->
     </header>
     
+    <!-- Reviews section -->
+    <section id="reviews">
+
+    </section>
+
     <!-- Contact Section -->
     <section id="contact">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d721.3303323628002!2d-79.56620257079919!3d43.68308266854334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b39e37a367ccd%3A0x6e266d3726d443b7!2s415%20The%20Westway%2C%20Etobicoke%2C%20ON%20M9R%203R4!5e0!3m2!1sen!2sca!4v1618861134263!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        
+        <h2 class="section-title"><span class="blue">C</span>ontact <span class="orange">U</span>s</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d721.3303323628002!2d-79.56620257079919!3d43.68308266854334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b39e37a367ccd%3A0x6e266d3726d443b7!2s415%20The%20Westway%2C%20Etobicoke%2C%20ON%20M9R%203R4!5e0!3m2!1sen!2sca!4v1618861134263!5m2!1sen!2sca"></iframe>
+        <div class="contact-content">
+            <div class="info">
+                <div class="details">
+                    <h4><i class="fas fa-home"></i> Address</h4>
+                    <p>415 The Westway,</p>
+                    <p>Etobicoke, ON M9R 3R4</p>
+                </div>
+                <div class="details">
+                    <h4><i class="fas fa-envelope"></i> Email</h4>
+                    <p>travelparadise@gmail.com</p>
+                </div>
+                <div class="details">
+                    <h4><i class="fas fa-phone"></i> Phone</h4>
+                    <p>+1-800-234-5678</p>
+                </div>
+                <div class="details">
+                    <h4><i class="fas fa-users"></i> Follow Us</h4>
+                    <p>
+                        <a href="https://twitter.com/?lang=en" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <form action="/" method="GET" id="message-box" autocomplete="on">
+                <h3 class="form-title">Get In Touch</h3>
+                <input type="text" name="name" placeholder="John Doe" required>
+                <input type="email" name="email" placeholder="abc@yahoo.com" required>
+                <textarea id="request" name="request" placeholder="My request is ..." required></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
     </section>
     
     <footer>
