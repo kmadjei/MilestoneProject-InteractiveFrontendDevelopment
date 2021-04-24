@@ -9,6 +9,7 @@
 <body>
 
     <header>
+
         <!-- Navigation bar-->
         <nav id="navbar">
             <a href="index.html" class="logo">
@@ -34,6 +35,27 @@
         </nav>
 
         <!-- Landing page for home page -->
+        <section id="home">
+            <div class="wrapper">
+                <h1>
+                    Explore New Places,<br>
+                    The Perfect Get-Away Awaits.
+                </h1>
+                <form action="index.html" id="destination-search" method="GET">
+                    <h3>Search Your Destination</h3>
+                    <input type="text" id="from-location"   name="leaving_from" placeholder="Leaving From" required>
+                    <input type="text" id="to-location"   name="going_to" placeholder="Going To" required>
+                    <label for="passengers">Passengers</label>
+                    <input type="number" id="passengers"   name="passengers" min="1" placeholder="Number Of Passengers">
+                    <label for="departure">Departure Date</label>
+                    <input type="date" id="departure"   name="departure" required>
+                    <label for="return">Return Date</label>
+                    <input type="date" id="return"   name="return" required>
+                    <input type="button" id="search-flight" name="search_flights" value="Search">
+                </form>
+            </div>
+        </section>
+
     </header>
 
     <!-- About section -->
@@ -209,7 +231,7 @@
 
     <!-- External javascript files -->
     <script type="text/javascript" src="assets/js/jQuery.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <!-- <script type="text/javascript" src="js/app.js"></script> -->
 
 </body>
 </html>

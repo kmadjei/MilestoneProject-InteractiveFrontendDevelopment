@@ -21,8 +21,6 @@ body {
 
 /*  Styling for Navigation */
 header {
- 
-
     /* 
         background shorthand: 
             background-color
@@ -38,14 +36,112 @@ header {
     background:  url('../images/hero1.jpg')  no-repeat fixed center;
     background-size: cover;
     height: 100vh;
+    padding-top: 20px;
 }
+
 
 #navbar {
+    width: 90%;
+    background-color: #fff;
     max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin: auto;
 }
 
-/* Styling for About Us section */
+#navbar #logo {
+    max-width: 2vw;
+}
 
+#navbar #navmenu  {
+    list-style: none;
+    display: flex;
+}
+
+#navmenu li{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px; 
+}
+
+#navmenu a {
+    text-decoration: none;
+    font-size: 22px; 
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--dark-color);
+}
+
+#navmenu a:hover {
+    color: var(--primary-color);
+}
+
+/* Styling for Home page */
+#home {
+    max-width: 1200px;
+    margin-top: 10vh;
+}
+
+#home .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .wrapper h1 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 3vw;
+    padding: 20px;
+}
+
+#destination-search {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+#destination-search h3 {
+    color: #FFA500;
+    text-align: center;
+}
+
+#destination-search input {
+    display: block;
+    padding: 5px;
+    margin: 10px auto;
+    width: 100%;
+    outline-color: var(--primary-color);
+}
+
+#destination-search label{
+    display: block;
+    color: var(--primary-color);
+}
+
+#destination-search input[type=button] {
+    color: #fff;
+    background-color: #FFA500;
+    width: 60%;
+    padding: 10px ;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid  #FFA500;
+}
+
+#destination-search input[type=button]:hover {
+    color:#FFA500;
+    background-color: #fff;
+    font-weight: 900;
+}
+
+
+
+
+/* Styling for About Us section */
 #about  {
     background-color: #f5f5f5;
     margin-top: 40px;
