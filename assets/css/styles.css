@@ -1,11 +1,9 @@
+/* Pre-defined colors */
 :root {
     --primary-color: #047aed;
     --secondary-color: #1c3fa8;
-
     --dark-color: #002240;
     --light-color: #f4f4f4;
-    --success-color: #5cb85c;
-    --error-color: #d9534f;
 }
   
 /* Reset margin and padding */
@@ -18,10 +16,158 @@
 body {
     font-family: 'Lato', sans-serif;
     color: #333;
+    background-color: #fff;
 }
+
+/*  Styling for Navigation */
+header {
+ 
+
+    /* 
+        background shorthand: 
+            background-color
+            background-image
+            background-repeat
+            background-attachment
+            position
+        ;
+
+        background image by Julius Silver:
+        - https://www.pexels.com/photo/cottages-in-the-middle-of-beach-753626/
+    */
+    background:  url('../images/hero1.jpg')  no-repeat fixed center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#navbar {
+    max-width: 1200px;
+}
+
+/* Styling for About Us section */
+
+#about  {
+    background-color: #f5f5f5;
+    margin-top: 40px;
+}
+
+#about .wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    
+}
+
+#about h2 {
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.about-content .leftgrid {
+    margin-right: 10px;
+}
+
+.about-content .leftgrid h3,
+.about-content .rightgrid h3 {
+    font-size: 25px;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+
+.about-content .leftgrid img {
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 300px;
+}
+
+.about-content .rightgrid {
+    margin-left: 10px;
+}
+
+.reason {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 30px;
+}
+
+.reason i {
+    font-size: 50px;
+    margin-right: 30px;
+    color: 	#FFA500;
+}
+
+.info b {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.subscription {
+    background-color: #f5f5f5;
+    margin-bottom: 40px;
+}
+
+.subscription form{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.subscription label {
+    display: block;
+}
+
+.subscription label em {
+    color: var(--primary-color);
+    font-size: 22px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.subscription input {
+    outline: none;
+    padding: 10px;
+}
+
+.subscription input[type=submit] {
+    padding: 11px 22px;
+    color: var(--light-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius:  5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.subscription input[type=submit]:hover {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Styling for Featured places */
+#features {
+    /* padding: 20px;
+    margin: 40px; */
+}
+
 
 /* Styling for Reviews section */
 #reviews {
+
+    /* 
+        Background image source from pexels.com by Riccardo Bresciani:
+        - https://www.pexels.com/photo/rear-view-of-man-sitting-on-rock-by-sea-307008/
+    */
     background-image: url('../images/hero2.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -52,11 +198,15 @@ body {
     align-items: center;
     justify-content: space-evenly; 
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
 }
 
 .rating {
     margin: 15px 0;
 }
+
 .rating  i {
     color: #FFD700;
     font-size: 20px;
@@ -75,7 +225,9 @@ body {
 .card .name {
     margin-top: 60px;
     margin-bottom: 10px;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--primary-color);
 }
 
 .img-container {
@@ -96,14 +248,15 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #f5f5f5;
-    
+    background-color: #f5f5f5; 
 }
 
 
 /* Styling for Contact Section */
 #contact {
-    padding: 20px;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 40px auto 0;
 }
 
 .section-title {
@@ -116,14 +269,14 @@ body {
 }
 
 .section-title .orange {
-    color: orange;
+    color:	#FFA500;
 }
 
 #contact iframe {
     display: block;
     border: none;
     width: 100%;
-    height: 200px;
+    height: 300px;
     margin-top: 10px;
 }
 
@@ -158,12 +311,13 @@ body {
 #message-box .form-title {
     color: var(--secondary-color);
     margin-bottom: 10px;
+    font-size: 25px;
 }
 
 #message-box input {
     display: inline-block;
     padding: 5px;
-    width: 49%;
+    width: 49.5%;
     border-radius: 2px;
     border: 1px solid var(--primary-color);
 }
@@ -175,7 +329,7 @@ body {
     border-radius: 2px;
     border: 1px solid var(--primary-color);
     width: 100%;
-    height: 120px;
+    height: 50%;
 }
 
 #message-box input[type=submit] {

@@ -9,8 +9,8 @@
 <body>
 
     <header>
-        <!-- Navigation -->
-        <nav>
+        <!-- Navigation bar-->
+        <nav id="navbar">
             <a href="index.html" class="logo">
                 <img src="assets/images/logo.png" alt="Travel Paradise logo" class="logo-img">
             </a>
@@ -19,22 +19,80 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="index.html">About Us</a>
+                    <a href="#about">About Us</a>
                 </li>
                 <li>
-                    <a href="index.html">Features</a>
+                    <a href="#features">Featured Places</a>
                 </li>
                 <li>
-                    <a href="index.html">Review</a>
+                    <a href="#reviews">Reviews</a>
                 </li>
                 <li>
-                    <a href="index.html">Contact Us</a>
+                    <a href="#contact">Contact Us</a>
                 </li>
             </ul>
         </nav>
 
         <!-- Landing page for home page -->
     </header>
+
+    <!-- About section -->
+    <section id="about">
+        <div class="wrapper">
+            <h2 class="section-title"><span class="blue">A</span>bout <span class="orange">U</span>s</h2>
+            <article class="about-content">
+                <div class="leftgrid">
+                    <h3>Are you already thinking about your next big trip?</h3>
+                    <!-- 
+                        logo designed using at
+                        - https://www.freelogodesign.org/
+                     -->
+                    <img src="assets/images/travel.jpg" alt="Travel">
+
+                </div>
+                <div class="rightgrid">
+                    <h3>If so, here is why you should consider working with Travel Paradise</h3> 
+                    <div class="reason">
+                        <i class="fas fa-plane-arrival"></i>
+                        <p class="info">
+                            <b>Travel with confidence</b>
+                            Along the side of expert travel agents equipped with to make your trip an unforgettable one.
+                        </p>
+                    </div>
+                    <div class="reason">
+                        <i class="fas fa-broadcast-tower"></i>
+                        <p class="info">
+                            <b>The flight experts</b>
+                            We keep you connected with all  the best hotel and flight deals negotiated at a price that fits you need.
+                        </p>
+                    </div>
+                    <div class="reason">
+                        <i class="fas fa-concierge-bell"></i>
+                        <p class="info">
+                            <b>Top quality services</b>
+                            Our experts are just a phone call away, ready for you 24/7, to make sure your needs a met.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="subscription">
+        <form action="index.html" method="POST">
+            <label for="signup">
+                <em>Subscribe to our newsletter!</em>
+                Stay on top of the latest deals and trends
+            </label>
+            <div>
+                <input type="email" id="signup" name="email_sign_up" placeholder="Enter Your Email Address">
+                <input type="submit" name="submit" value="Sign Up!">
+            </div>
+        </form>
+    </section>
+
+    <!-- Feature section with places api -->
+    <section id="features"></section>
     
     <!-- Reviews section -->
     <section id="reviews">
@@ -43,6 +101,10 @@
             <div class="review-content">
                 <div class="card">
                     <div class="img-container">
+                        <!-- 
+                            image source:
+                            - https://png.pngitem.com/pimgs/s/0-3058_black-hair-eyelash-chin-girl-head-png-transparent.png
+                         -->
                         <img src="assets/images/prof2.png" alt="Review Avatar image">
                     </div>
                     <p class="name">Mary Jane</p>
@@ -75,6 +137,10 @@
                 </div>
                 <div class="card">
                     <div class="img-container">
+                        <!-- 
+                            image source:
+                            - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn7Anm5NibgpKAhSbwnhmd3IyuB9ffTx7aLWP7mMQVvAGBNbruIWsLv8aZbHcwISpx33o&usqp=CAU
+                         -->
                         <img src="assets/images/prof3.png" alt="Review Avatar image">
                     </div>
                     <p class="name">Diane Griffin</p>
@@ -140,5 +206,10 @@
     <footer>
         <p>Copyright 2021 &copy; Canadian Business College - Milestone Project Interactive Frontend Development - Kenneth Adjei</p>
     </footer>
+
+    <!-- External javascript files -->
+    <script type="text/javascript" src="assets/js/jQuery.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
 </body>
 </html>
