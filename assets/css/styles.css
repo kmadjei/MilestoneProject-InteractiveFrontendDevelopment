@@ -1,466 +1,148 @@
-/* Pre-defined colors */
-:root {
-    --primary-color: #047aed;
-    --secondary-color: #1c3fa8;
-    --dark-color: #002240;
-    --light-color: #f4f4f4;
-}
-  
-/* Reset margin and padding */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+/*================== Reset margin and padding ===============*/
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 body {
+    background-color: #fff;
     font-family: 'Lato', sans-serif;
-    color: #333;
-    background-color: #fff;
-}
-
-/*  Styling for Navigation */
-header {
-    /* 
-        background shorthand: 
-            background-color
-            background-image
-            background-repeat
-            background-attachment
-            position
-        ;
-
-        background image by Julius Silver:
-        - https://www.pexels.com/photo/cottages-in-the-middle-of-beach-753626/
-    */
-    background:  url('../images/hero1.jpg')  no-repeat fixed center;
-    background-size: cover;
-    height: 100vh;
-    padding-top: 20px;
-}
-
-
-#navbar {
-    width: 90%;
-    background-color: #fff;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 5px;
-    margin: auto;
-}
-
-#navbar #logo {
-    max-width: 2vw;
-}
-
-#navbar #navmenu  {
-    list-style: none;
-    display: flex;
-}
-
-#navmenu li{
-    display: flex;
-    align-items: center;
-    padding: 10px 20px; 
-}
-
-#navmenu a {
-    text-decoration: none;
-    font-size: 22px; 
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--dark-color);
-}
-
-#navmenu a:hover {
-    color: var(--primary-color);
-}
-
-/* Styling for Home page */
-#home {
-    max-width: 1200px;
-    margin-top: 10vh;
-}
-
-#home .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-#home .wrapper h1 {
-    color: #fff;
-    font-weight: 900;
-    font-size: 3vw;
-    padding: 20px;
-}
-
-#destination-search {
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 7px;
-}
-
-#destination-search h3 {
-    color: #FFA500;
     text-align: center;
 }
 
-#destination-search input {
-    display: block;
-    padding: 5px;
-    margin: 10px auto;
-    width: 100%;
-    outline-color: var(--primary-color);
-}
-
-#destination-search label{
-    display: block;
-    color: var(--primary-color);
-}
-
-#destination-search input[type=button] {
-    color: #fff;
-    background-color: #FFA500;
-    width: 60%;
-    padding: 10px ;
-    margin: 0 auto;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid  #FFA500;
-}
-
-#destination-search input[type=button]:hover {
-    color:#FFA500;
-    background-color: #fff;
-    font-weight: 900;
-}
-
-
-
-
-/* Styling for About Us section */
-#about  {
-    background-color: #f5f5f5;
-    margin-top: 40px;
-}
-
-#about .wrapper {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
-    
-}
-
-#about h2 {
+/*================== styling the topics area ==============*/
+header .title {
     margin-bottom: 20px;
-}
-
-.about-content {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.about-content .leftgrid {
-    margin-right: 10px;
-}
-
-.about-content .leftgrid h3,
-.about-content .rightgrid h3 {
-    font-size: 25px;
-    text-align: center;
-    color: var(--secondary-color);
-    margin-bottom: 10px;
-}
-
-
-.about-content .leftgrid img {
-    display: block;
-    margin: auto;
-    width: 90%;
-    height: 300px;
-}
-
-.about-content .rightgrid {
-    margin-left: 10px;
-}
-
-.reason {
-    display: grid;
-    grid-template-columns: auto auto;
-    margin-bottom: 30px;
-}
-
-.reason i {
-    font-size: 50px;
-    margin-right: 30px;
-    color: 	#FFA500;
-}
-
-.info b {
-    display: block;
-    margin-bottom: 6px;
-}
-
-.subscription {
-    background-color: #f5f5f5;
-    margin-bottom: 40px;
-}
-
-.subscription form{
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.subscription label {
-    display: block;
-}
-
-.subscription label em {
-    color: var(--primary-color);
-    font-size: 22px;
-    text-transform: uppercase;
-    display: block;
-}
-
-.subscription input {
-    outline: none;
-    padding: 10px;
-}
-
-.subscription input[type=submit] {
-    padding: 11px 22px;
-    color: var(--light-color);
-    background-color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    border-radius:  5px;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-
-.subscription input[type=submit]:hover {
-    background-color: var(--light-color);
-    color: var(--primary-color);
-    font-weight: bold;
-}
-
-/* Styling for Featured places */
-#features {
-    /* padding: 20px;
-    margin: 40px; */
-}
-
-
-/* Styling for Reviews section */
-#reviews {
-
-    /* 
-        Background image source from pexels.com by Riccardo Bresciani:
-        - https://www.pexels.com/photo/rear-view-of-man-sitting-on-rock-by-sea-307008/
-    */
-    background-image: url('../images/hero2.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    position: relative;
-}
-
-.overlay {
-    background-color: rgba(0, 204, 255, 0.6);
-    padding-top: 30px;
-}
-
-#reviews h2 {
-    color: var(--light-color);
-    font-weight: bold;
-    margin-top: px;
-}
-
-#reviews h2 span {
-    color:#FFFF00;
-}
-
-.review-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly; 
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1200px;
-}
-
-.rating {
-    margin: 15px 0;
-}
-
-.rating  i {
-    color: #FFD700;
-    font-size: 20px;
-}
-
-.review-content .card {
-    width: 300px;
-    position: relative;
-    text-align: center;
-    background-color: #fff;
-    position: relative;
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-
-.card .name {
-    margin-top: 60px;
-    margin-bottom: 10px;
-    font-weight: 600;
-    font-size: 20px;
-    color: var(--primary-color);
-}
-
-.img-container {
-    background-color: #fff;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    left: 100px;
-    top: -50px;
-    padding: 5px;
-    overflow: hidden;
-
-}
-
-.img-container img {
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #f5f5f5; 
-}
-
-
-/* Styling for Contact Section */
-#contact {
-    max-width: 1200px;
-    padding: 0 20px;
-    margin: 40px auto 0;
-}
-
-.section-title {
+    color: #0000CD;
     font-size: 40px;
+}
+
+main {
+    margin: auto;
+}
+
+#topics {
+    max-width: 770px;
+    background-color: #E6ECF0;
+    margin: auto;
+    padding: 20px;
+}
+
+#topics i {
+    font-size: 30px;
+}
+
+button {
+    display: block;
+    background-color: #fff;
+    margin: 10px auto;
+    padding: 10px 20px; 
+    width: 80%;
     text-align: center;
-}
-
-.section-title .blue {
-    color: var(--primary-color);
-}
-
-.section-title .orange {
-    color:	#FFA500;
-}
-
-#contact iframe {
-    display: block;
-    border: none;
-    width: 100%;
-    height: 300px;
-    margin-top: 10px;
-}
-
-.contact-content {
-    display: grid;
-    grid-template-columns: auto auto;
-    margin-top: 30px;
-}
-
-.details {
-    margin-bottom: 30px;
-}
-.details i {
-    color: var(--secondary-color);
-}
-
-.details h4 {
-    margin-bottom: 10px;
-}
-
-.details a {
-    text-decoration: none;
-    margin-left: 5px;
-}
-
-.details a i{
-   color: orange;
-   font-size: 28px;
-}
-
-
-#message-box .form-title {
-    color: var(--secondary-color);
-    margin-bottom: 10px;
-    font-size: 25px;
-}
-
-#message-box input {
-    display: inline-block;
-    padding: 5px;
-    width: 49.5%;
-    border-radius: 2px;
-    border: 1px solid var(--primary-color);
-}
-
-#message-box textarea{
-    display: block;
-    padding: 5px;
-    margin: 10px 0px;
-    border-radius: 2px;
-    border: 1px solid var(--primary-color);
-    width: 100%;
-    height: 50%;
-}
-
-#message-box input[type=submit] {
-    border-radius: 5px;
-    color: var(--primary-color);
-    margin-top: 10px;
-    width: 60px;
+    text-transform: uppercase;
+    font-size: 30px;
+    border-radius: 10px;
+    border: 5px solid;
     cursor: pointer;
+    color: #006666;
+    transition: 0.28s ease-in-out;
 }
 
-#message-box input[type=submit]:hover {
-    color: var(--light-color);
-    background-color: var(--primary-color);
-    font-weight: bold;
+#food {
+    border-color: #ff0000;
 }
 
-#message-box input:focus, #message-box textarea:focus {
-    outline: none;
-    border: 2px solid var(--primary-color);
+#food i {
+    color: #ff0000;
+    transition: 0.28s ease-in-out;
 }
 
+#food:hover {
+    background-color: #900000;
+    color: #fff;
+}
 
-/* Footer */
+#food:hover i {
+    color: #fff;
+}
+
+#inspiration {
+    border-color: #FFff66;
+}
+
+#inspiration i {
+    color: #FFff66;
+    transition: 0.28s ease-in-out;
+}
+
+#inspiration:hover {
+    background-color: #ffcc00;
+    color: #fff;
+}
+
+#inspiration:hover i {
+    color: #fff;
+}
+
+#out {
+    border-color: #66ff00;
+}
+
+#out i {
+    color: #66ff00;
+    transition: 0.28s ease-in-out;
+}
+
+#out:hover {
+    background-color: #669900;
+    color: #fff;
+}
+
+#out:hover i {
+    color: #fff;
+}
+
+#challenge {
+    border-color: #3366ff;
+}
+
+#challenge i {
+    color: #3366ff;
+    transition: 0.28s ease-in-out;
+}
+
+#challenge:hover {
+    background-color: #330099;
+    color: #fff;
+}
+
+#challenge:hover i {
+    color: #fff;
+}
+
 footer {
-    background-color: var(--dark-color);
-    color: var(--light-color);
-    padding: 20px 30px;
-}
-
-footer p {
+    max-width: 770px;
+    margin: auto;
+    padding: 30px;
     text-align: center;
+    color: navy;
+    font-size: 12px;
 }
 
-/* Responsive styling for small devices */
-@media (max-width: 500px) {
+/* ================= Media queries =============*/
+@media screen and (max-width: 500px) { 
+    header .title {
+        font-size: 30px;
+    }
 
-    /* styles */
+    #topics button {
+        font-size: 16px;
+    }
+
+    #topics i {
+        font-size: 20px;
+    }
 }

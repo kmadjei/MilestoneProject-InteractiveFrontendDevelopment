@@ -1,237 +1,85 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Travel Paradise</title>
+    <title>What do you feel for?</title>
 </head>
 <body>
 
-    <header>
+    <main>
 
-        <!-- Navigation bar-->
-        <nav id="navbar">
-            <a href="index.html" class="logo">
-                <img src="assets/images/logo.png" alt="Travel Paradise logo" class="logo-img">
-            </a>
-            <ul id="navmenu">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="#about">About Us</a>
-                </li>
-                <li>
-                    <a href="#features">Featured Places</a>
-                </li>
-                <li>
-                    <a href="#reviews">Reviews</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact Us</a>
-                </li>
-            </ul>
+        <!-- Heading -->
+        <header>
+            <img src="assets/images/What-to-do.jpg" alt="Logo">
+            <h1 class="title">What do you feel for?</h1>    
+        </header>
+        
+        <!-- Topics to browse -->
+        <nav id="topics">
+
+            <!-- Trigger/Open for The food-modal -->
+            <button id="food">
+                <i class="fas fa-hamburger"></i>
+                Food!
+                <i class="fas fa-utensils"></i>
+            </button>
+
+            <button id="inspiration">
+                <i class="far fa-lightbulb"></i>
+                Inspiration!
+                <i class="fas fa-bolt"></i>
+            </button>
+            <button id="out">
+                <i class="fas fa-cloud-sun"></i>
+                To go out!
+                <i class="fas fa-hiking"></i>
+            </button>
+            <button id="challenge">
+                <i class="fas fa-chess"></i>
+                Challenge!
+                <i class="fas fa-trophy"></i>
+            </button>
         </nav>
 
-        <!-- Landing page for home page -->
-        <section id="home">
-            <div class="wrapper">
-                <h1>
-                    Explore New Places,<br>
-                    The Perfect Get-Away Awaits.
-                </h1>
-                <form action="index.html" id="destination-search" method="GET">
-                    <h3>Search Your Destination</h3>
-                    <input type="text" id="from-location"   name="leaving_from" placeholder="Leaving From" required>
-                    <input type="text" id="to-location"   name="going_to" placeholder="Going To" required>
-                    <label for="passengers">Passengers</label>
-                    <input type="number" id="passengers"   name="passengers" min="1" placeholder="Number Of Passengers">
-                    <label for="departure">Departure Date</label>
-                    <input type="date" id="departure"   name="departure" required>
-                    <label for="return">Return Date</label>
-                    <input type="date" id="return"   name="return" required>
-                    <input type="button" id="search-flight" name="search_flights" value="Search">
-                </form>
-            </div>
-        </section>
+                <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Open Modal</button>
 
-    </header>
+        <!-- Food Modal -->
+        <article id="food-modal" class="modal">
 
-    <!-- About section -->
-    <section id="about">
-        <div class="wrapper">
-            <h2 class="section-title"><span class="blue">A</span>bout <span class="orange">U</span>s</h2>
-            <article class="about-content">
-                <div class="leftgrid">
-                    <h3>Are you already thinking about your next big trip?</h3>
-                    <!-- 
-                        logo designed using at
-                        - https://www.freelogodesign.org/
-                     -->
-                    <img src="assets/images/travel.jpg" alt="Travel">
+            <!-- Modal content -->
+            <section class="modal-content">
+                <div class="modal-header">
+                    <h2>Modal Header</h2>
+                    <span class="close">&times;</span>
+                    <h2>Modal Header</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the Modal Body</p>
+                    <p>Some other text...</p>
+                </div>
+                <div class="modal-footer">
+                <h3>Modal Footer</h3>
+                </div>
+            </section>
 
-                </div>
-                <div class="rightgrid">
-                    <h3>If so, here is why you should consider working with Travel Paradise</h3> 
-                    <div class="reason">
-                        <i class="fas fa-plane-arrival"></i>
-                        <p class="info">
-                            <b>Travel with confidence</b>
-                            Along the side of expert travel agents equipped with to make your trip an unforgettable one.
-                        </p>
-                    </div>
-                    <div class="reason">
-                        <i class="fas fa-broadcast-tower"></i>
-                        <p class="info">
-                            <b>The flight experts</b>
-                            We keep you connected with all  the best hotel and flight deals negotiated at a price that fits you need.
-                        </p>
-                    </div>
-                    <div class="reason">
-                        <i class="fas fa-concierge-bell"></i>
-                        <p class="info">
-                            <b>Top quality services</b>
-                            Our experts are just a phone call away, ready for you 24/7, to make sure your needs a met.
-                        </p>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </section>
+        </article>
 
-    <section class="subscription">
-        <form action="index.html" method="POST">
-            <label for="signup">
-                <em>Subscribe to our newsletter!</em>
-                Stay on top of the latest deals and trends
-            </label>
-            <div>
-                <input type="email" id="signup" name="email_sign_up" placeholder="Enter Your Email Address">
-                <input type="submit" name="submit" value="Sign Up!">
-            </div>
-        </form>
-    </section>
 
-    <!-- Feature section with places api -->
-    <section id="features"></section>
-    
-    <!-- Reviews section -->
-    <section id="reviews">
-        <div class="overlay">
-            <h2 class="section-title"><span>R</span>eviews</h2>
-            <div class="review-content">
-                <div class="card">
-                    <div class="img-container">
-                        <!-- 
-                            image source:
-                            - https://png.pngitem.com/pimgs/s/0-3058_black-hair-eyelash-chin-girl-head-png-transparent.png
-                         -->
-                        <img src="assets/images/prof2.png" alt="Review Avatar image">
-                    </div>
-                    <p class="name">Mary Jane</p>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, ut.
-                    </p>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-container">
-                        <img src="assets/images/prof1.jpg" alt="Review Avatar image">
-                    </div>
-                    <p class="name">John Jonas</p>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, ut.
-                    </p>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-container">
-                        <!-- 
-                            image source:
-                            - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn7Anm5NibgpKAhSbwnhmd3IyuB9ffTx7aLWP7mMQVvAGBNbruIWsLv8aZbHcwISpx33o&usqp=CAU
-                         -->
-                        <img src="assets/images/prof3.png" alt="Review Avatar image">
-                    </div>
-                    <p class="name">Diane Griffin</p>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, ut.
-                    </p>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2 class="section-title"><span class="blue">C</span>ontact <span class="orange">U</span>s</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d721.3303323628002!2d-79.56620257079919!3d43.68308266854334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b39e37a367ccd%3A0x6e266d3726d443b7!2s415%20The%20Westway%2C%20Etobicoke%2C%20ON%20M9R%203R4!5e0!3m2!1sen!2sca!4v1618861134263!5m2!1sen!2sca"></iframe>
-        <div class="contact-content">
-            <div class="info">
-                <div class="details">
-                    <h4><i class="fas fa-home"></i> Address</h4>
-                    <p>415 The Westway,</p>
-                    <p>Etobicoke, ON M9R 3R4</p>
-                </div>
-                <div class="details">
-                    <h4><i class="fas fa-envelope"></i> Email</h4>
-                    <p>travelparadise@gmail.com</p>
-                </div>
-                <div class="details">
-                    <h4><i class="fas fa-phone"></i> Phone</h4>
-                    <p>+1-800-234-5678</p>
-                </div>
-                <div class="details">
-                    <h4><i class="fas fa-users"></i> Follow Us</h4>
-                    <p>
-                        <a href="https://twitter.com/?lang=en" target="_blank">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank">
-                            <i class="fab fa-instagram-square"></i>
-                        </a>
-                        <a href="https://www.facebook.com/" target="_blank">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <form action="/" method="GET" id="message-box" autocomplete="on">
-                <h3 class="form-title">Get In Touch</h3>
-                <input type="text" name="name" placeholder="John Doe" required>
-                <input type="email" name="email" placeholder="abc@yahoo.com" required>
-                <textarea id="request" name="request" placeholder="My request is ..." required></textarea>
-                <input type="submit" value="Send">
-            </form>
-        </div>
-    </section>
+    </main>
+
     
     <footer>
         <p>Copyright 2021 &copy; Canadian Business College - Milestone Project Interactive Frontend Development - Kenneth Adjei</p>
     </footer>
 
     <!-- External javascript files -->
-    <script type="text/javascript" src="assets/js/jQuery.min.js"></script>
-    <!-- <script type="text/javascript" src="js/app.js"></script> -->
+    <script src="assets/js/jQuery.min.js"></script>
+    <script src="assets/js/get-the-food.js"></script>
 
 </body>
 </html>
