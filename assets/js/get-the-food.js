@@ -1,57 +1,46 @@
 // wait for webpage to be ready before executing functions
 $(document).ready(function(){
 
+    // Code source example from w3schools
+    // https://www.w3schools.com/howto/howto_css_modals.asp
 
-    /*
-        Sticky Navbar source reference:
-        - https://www.w3schools.com/howto/howto_js_sticky_header.asp
-    */
-    // When the user scrolls the page, execute Function
-    $(document).scroll(function(){
+    //Open food modal when user clicks the food button
+    $('#food').click(function(){
+        $('#food-modal').css('display', 'block'); 
+    }); 
 
-
-        //Place navbar fixed at the top when scroll position is reached
-        if (window.pageYOffset > 20) {
-
-            $('header').css(
-                {
-                    'margin-top': '0px',
-                    'background-color': '#fff'        
-                }        
-            );
-
-            $('#navbar').css(
-                {
-                    'width': '100%'
-                    
-                }        
-            );
-
-        }  else {
-            // Place navbar back to original position when user scrolls back to top page
-
-            $('header').css(
-                {
-                    'margin-top': '20px',
-                    'background-color': 'initial'        
-                }        
-        );
-
-        $('#navbar').css(
-                {
-                    'width': 'initial',
-                }        
-            );
-        }
-
-
+    //closes the food modal when user clicks the close <span>
+    $('#food-modal .close').click(function(){
+        //action to take
+        $('#food-modal').css('display', 'none');
     });
 
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == $('#food-modal')) {
+            $('#food-modal').css('display', 'none');
+        }
+    }
 
+    //executes get meal HTTP request
+    function get_meal() {
 
+        let request;
 
+        fetch("https://www.themealdb.com/api/json/v1/1/random.php")
+        .then(response => { 
+            /* code if successful */ 
 
+            // convert to json object
+            request = response.json();
+            console.log(request[0][]);
 
-
+        },
+            error => {
+                /* code if some error */
+                console.error('Request failure: ', error);
+            }
+        );
+    }
     
 });

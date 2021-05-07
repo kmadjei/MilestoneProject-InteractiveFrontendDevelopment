@@ -10,10 +10,16 @@
 body {
     background-color: #fff;
     font-family: 'Lato', sans-serif;
-    text-align: center;
 }
 
 /*================== styling the topics area ==============*/
+
+header {
+    max-width: 770px;
+    text-align: center;
+    margin: auto;
+}
+
 header .title {
     margin-bottom: 20px;
     color: #0000CD;
@@ -35,7 +41,8 @@ main {
     font-size: 30px;
 }
 
-button {
+/* Styling the topic buttons */
+#topics button {
     display: block;
     background-color: #fff;
     margin: 10px auto;
@@ -51,7 +58,7 @@ button {
     transition: 0.28s ease-in-out;
 }
 
-#food {
+#topics #food {
     border-color: #ff0000;
 }
 
@@ -69,7 +76,7 @@ button {
     color: #fff;
 }
 
-#inspiration {
+#topics #inspiration {
     border-color: #FFff66;
 }
 
@@ -87,7 +94,7 @@ button {
     color: #fff;
 }
 
-#out {
+#topics #out {
     border-color: #66ff00;
 }
 
@@ -105,7 +112,7 @@ button {
     color: #fff;
 }
 
-#challenge {
+#topics #challenge {
     border-color: #3366ff;
 }
 
