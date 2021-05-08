@@ -6,7 +6,7 @@
 */
 
 #food-modal {
-    /* display: none; */
+    display: none;
     font-family: Arial, Helvetica, sans-serif;
     position: fixed; 
     z-index: 1; 
@@ -31,9 +31,9 @@
     max-width: 900px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.3s;
+    -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.3s
+    animation-duration: 0.4s
 }
 
 /* Add Animation */
@@ -93,20 +93,49 @@
     text-decoration: none;
     cursor: pointer;
 }
-  
+
+
+/* styling the modal body and content  */
 .modal-body {
     padding: 5px 16px;
     overflow: auto;
+    height: 80vh;
 }
 
 .modal-body .caption {
     display: grid;
     grid-template-columns: auto auto;
+    padding: 10px;
+    margin: 15px auto 20px;
 }
+
+.caption img {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+.info .ingredients h4 {
+    margin: 10px 0;
+}
+
+.info .ingredients ul {
+    padding-left: 15px;
+}
+
+#food-modal .instructions {
+    margin-bottom: 25px;
+}
+
+#food-modal h3 {
+    margin-bottom: 10px;
+}
+
 
 .video-wrapper {
     position: relative;
-
+    width: 400px;
+    height: 300px;
 }
 
 .video-wrapper iframe {
@@ -117,4 +146,47 @@
     height: 100%;
 }
 
+
+/* ========= Responsive design with media queries ============== */
+
+@media screen and (max-width: 890px) { 
+    .caption .info {
+        margin-left: 10px;
+    } 
+}
+
+@media screen and (max-width: 560px) { 
+    #food-modal .modal-header h2 {
+        font-size: 4vw;
+    }
+
+    #food-modal #get-meal {
+        font-size: 12px;
+        padding: 5px;
+        border-radius: 1px;
+    }
+
+    .modal-body .caption {
+
+        grid-template-columns: auto;
+        
+    }
+
+    .thumbnail img {
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+}
+
+@media screen and (max-width: 450px) { 
+    #food-modal #get-meal {
+        font-size: 11px;
+    }
+
+    #food-modal iframe {
+        margin: auto;
+        width: 300px;
+    }
+}
   
