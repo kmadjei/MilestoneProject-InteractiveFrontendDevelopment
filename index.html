@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/food.css">
+    <link rel="stylesheet" href="assets/css/inspiration.css">
     <title>What do you feel for?</title>
 </head>
 <body>
@@ -28,6 +29,7 @@
                 <i class="fas fa-utensils"></i>
             </button>
 
+             <!-- Trigger/Open for The inspiration-modal -->
             <button id="inspiration">
                 <i class="far fa-lightbulb"></i>
                 Inspiration!
@@ -45,8 +47,13 @@
             </button>
         </nav>
 
+        <!-- 
+            Modal based on example from w3schools code
+            - https://www.w3schools.com/howto/howto_css_modals.asp
+         -->
+
         <!-- Food Modal -->
-        <article id="food-modal">
+        <div id="food-modal">
 
             <!-- Modal content -->
             <section class="modal-content">
@@ -56,36 +63,28 @@
                     <span class="close">&times;</span>
                 </div>
                 <div class="modal-body">
-
-
-                    <!-- <section class="caption">
-                        <div class="thumbnail">
-                            <img src="" alt="Food Image">
-                        </div>
-                        <div class="info">
-                            <p class="food-id">                                
-                                <b>Origin:</b> USA
-                                <b>Category:</b> fast food
-                                <b>Meal:</b> burger
-                            </p>
-                            <div class="ingredients">
-                                <h4>Ingredients</h4>
-                                <ul></ul>
-                            </div>
-                        </div>
-                    </section>
-                    <p class="instructions">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus aliquam minima provident. Temporibus, sit! In adipisci, quam magni repudiandae totam fuga veniam a reprehenderit dolorum sit tenetur ratione quidem minus.
-                    </p>
-                    <div class="video-wrapper">
-                        <iframe src="" title="Cooking preparation video"></iframe>
-                    </div> -->
-
                 </div>
             </section>
 
-        </article>
+        </div>
 
+
+        <!-- Inspiration Modal -->
+        <div id="inspiration-modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Want More?</h2>
+                    <button id="get-inspiration">Get More</button>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+
+                </div>
+            </div>
+
+        </div>
 
 
     </main>
@@ -98,6 +97,7 @@
     <!-- External javascript files -->
     <script src="assets/js/jQuery.min.js"></script>
     <script src="assets/js/get-the-food.js"></script>
+    <script src="assets/js/get-inspiration.js"></script>
 
 </body>
 </html>

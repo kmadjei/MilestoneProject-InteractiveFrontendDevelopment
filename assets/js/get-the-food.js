@@ -35,7 +35,7 @@ $(document).ready(function(){
         .then(response => response.json())
         .then(data => {
             //code if success
-            console.debug(data.meals[0]);
+            console.log(data.meals[0]);
             // function to html content
             create_meal_html_content(data.meals[0])
         }).catch(error => {
