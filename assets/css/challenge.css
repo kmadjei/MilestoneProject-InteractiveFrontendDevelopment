@@ -1,13 +1,11 @@
 /* Styling the inspiration modal */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Pacifico&display=swap');
 
 /* 
     Styling source from w3schools:
     https://www.w3schools.com/howto/howto_css_modals.asp
 */
 
-#inspiration-modal {
+#challenge-modal {
     display: none;
     font-family: Arial, Helvetica, sans-serif;
     position: fixed; 
@@ -23,56 +21,45 @@
 }
   
 /* Modal Content */
-#inspiration-modal  .modal-content {
+#challenge-modal  .modal-content {
     position: relative;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
     width: 100%;
-    max-width: 900px;
-
-    /* 
-        Background image from unsplash by Robert Kovacs
-        https://unsplash.com/photos/RCAUuu9MN2I
-    */
-    background-image: url("../images/inspire-bg.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    max-width: 700px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animateright;
+    -webkit-animation-name: animateleft;
     -webkit-animation-duration: 0.4s;
-    animation-name: animateright;
+    animation-name: animateleft;
     animation-duration: 0.4s
 }
 
 /* Add Animation */
-@-webkit-keyframes animateright {
-    from {right:-500px; opacity:0} 
-    to {right:0; opacity:1}
+@-webkit-keyframes animateleft {
+    from {left:-500px; opacity:0} 
+    to {left:0; opacity:1}
 }
 
-@keyframes animateright {
-    from {right:-500px; opacity:0}
-    to {right:0; opacity:1}
+@keyframes animateleft {
+    from {left:-500px; opacity:0}
+    to {left:0; opacity:1}
 }
 
 /* styling for modal header */
   
-#inspiration-modal .modal-header {
-    background: transparent;
+#challenge-modal .modal-header {
+    background: #3366ff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 16px;
     color: white;
     border-bottom: 1px solid #000;
+    
 }
 
-#get-inspiration {
-    /* background-color: #5bc0de; */
+#get-challenge {
     background-color: rgba(36%,75%,87%,0.7);
     color: #fff;
     border: none;
@@ -84,55 +71,96 @@
     transition: 0.2s ease;
 }
 
-#get-inspiration:hover,
-#get-inspiration:focus {
-    border: 1px solid #FFff66;
+#get-challenge:hover,
+#get-challenge:focus {
+    border: 2px solid #F4f4f4;
     background: transparent;
 }
 
 /* The Close Button */
-.close {
+#challenge-modal .close {
     color: white;
     font-size: 30px;
     font-weight: 700;
     cursor: pointer;
 }
 
-#inspiration-modal .close:hover,
-#inspiration-modal .close:focus {
-    color: #ffcc00;
+#challenge-modal .close:hover,
+#challenge-modal .close:focus {
+    color: #330099;
     text-decoration: none;
     cursor: pointer;
 }
 
 
 /* styling the modal body and content  */
-#inspiration-modal .modal-body {
+#challenge-modal .modal-body {
     background: transparent;
     padding: 5px 16px;
     overflow: auto;
-    height: 80vh;
+    height: 70vh;
     color: #fff;
     text-align: center;
     background-color: rgba(0,0,0,0.3);
 }
 
-#inspiration-modal .quotes {
-    margin: 30px 0;
+#challenge-modal .modal-body section {
+    margin: 20px 0;
+
 }
 
-#inspiration-modal .quotes  h3{
-    margin-bottom: 20px;
-    font-weight: 600;
-    font-size: 35px;
-    color: #ffcc00;
-    text-decoration: underline;
+#challenge-modal .modal-body .heading {
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
-#inspiration-modal .quotes  p{
-    font-family: 'Pacifico', 'Open Sans', sans-serif;
-    font-size: 30px;
-    font-weight: ;
-    /* color: #5F9EA0; */
-    color: #ffff66;
+.modal-body .answer-area,
+.modal-body .score-area {
+    margin: 20px;
 }
+
+#answer-box {
+    display: block;
+    margin: 0 auto 10px;
+    padding: 7px 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    outline-color: #3366ff;
+    color: #330099;
+    max-width: 300px;
+    width: 100%;
+}
+
+#submit-answer {
+    padding: 7px 14px;
+    border-radius: 7px 15px;
+    border: none;
+    text-transform: uppercase;  
+}
+
+#corrected-answer {
+    color: #ff0000;
+    padding: 7px 15px;
+    margin: 10px;
+}
+
+.score-area .scores {
+    margin: 10px;
+}
+
+.score-area .correct {
+    color:#00FF00;
+}
+
+.score-area .incorrect {
+    color:#ff0000;
+}
+
+@media screen and (max-width: 500px) { 
+    #challenge-modal .modal-header h2 {
+        font-size: 4vw;
+    }
+}
+
+
