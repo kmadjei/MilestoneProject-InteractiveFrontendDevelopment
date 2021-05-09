@@ -112,6 +112,7 @@
 #challenge-modal .modal-body .heading {
     margin-bottom: 10px;
     text-transform: uppercase;
+    color: #3366ff;
 }
 
 .modal-body .answer-area,
@@ -137,6 +138,14 @@
     border-radius: 7px 15px;
     border: none;
     text-transform: uppercase;  
+    background-color: #330099;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+#submit-answer:hover {
+    background-color: #3366ff;
 }
 
 #corrected-answer {
@@ -157,6 +166,7 @@
     color:#ff0000;
 }
 
+/* =====Responsive design with media queries for small screens========= */
 @media screen and (max-width: 500px) { 
     #challenge-modal .modal-header h2 {
         font-size: 4vw;
