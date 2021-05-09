@@ -1,5 +1,6 @@
 /* Styling the inspiration modal */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Pacifico&display=swap');
 
 /* 
     Styling source from w3schools:
@@ -122,25 +123,15 @@
 #inspiration-modal .quotes  h3{
     margin-bottom: 20px;
     font-weight: 600;
-    font-size: 30px;
-    color: #ffcc00;;
+    font-size: 35px;
+    color: #ffcc00;
+    text-decoration: underline;
 }
 
 #inspiration-modal .quotes  p{
-    font-family: 'Dancing Script', sans-serif;
+    font-family: 'Pacifico', 'Open Sans', sans-serif;
     font-size: 30px;
-    color:#fefefe;
-}
-
-
-
-
-
-
-/* ========= Responsive design with media queries ============== */
-
-@media screen and (max-width: 890px) { 
-    .caption .info {
-        margin-left: 10px;
-    } 
+    font-weight: ;
+    /* color: #5F9EA0; */
+    color: #ffff66;
 }

@@ -5,107 +5,79 @@ $(document).ready(function(){
     // https://www.w3schools.com/howto/howto_css_modals.asp
 
     //Open inspiration modal when user clicks the inspiration button
-    $('#inspiration').click(function(){
-        $('#inspiration-modal').css('display', 'block'); 
-        get_inspiration(); 
-        get_joke();  
+    $('#out').click(function(){
+        $('#out-modal').css('display', 'block'); 
+        $('#out-modal .search').val("");
     }); 
 
     //closes the inspiration modal when user clicks the close <span>
-    $('#inspiration-modal .close').click(function(){
+    $('#out-modal .close').click(function(){
         //action to take
-        $('#inspiration-modal').css('display', 'none');
+        $('#out-modal').css('display', 'none');
     });
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
-        if (event.target == $('#inspiration-modal')) {
-            $('#inspiration-modal').css('display', 'none');
+        if (event.target == $('#out-modal')) {
+            $('#out-modal').css('display', 'none');
         }
     }
 
-    // grabs more inspiration and jokes request when user clicks button
-    $('#inspiration-modal #get-inspiration').click(function() {
-        get_inspiration();
-        get_joke();
+    //search for weather when user submits input
+    $('#out-modal .enter').click(get_weather);
+
+    //search for weather when user presses enter key
+    $("#out-modal .search").keypress(function(event){
+        if (event.keyCode === 13) {
+            get_weather();
+        }
     });
 
+    // Weather app example inspiration source
+    // https://www.youtube.com/watch?v=GuA0_Z1llYU&t=1261s&ab_channel=TylerPotts
 
-    //executes get inspiration HTTP request
-    function get_inspiration() {
+    function get_weather() {
 
-        // http API get request
-        fetch("https://type.fit/api/quotes")
-        .then(response => response.json())
-        .then(data => {
-            //code if success
-            console.log(data);
-            //generate random quote from 1600 selections
-            let random =  Math.floor(Math.random() * 1600) + 1;
-            let quote = data[random];
-            // display content in html doc
-            $('#inspiration-modal .modal-body').html(`
-                <section class="quotes">
-                    <h3>Get Inspired!</h3>
-                    <p>
-                        <i class="fas fa-quote-left"></i>
-                        ${quote.text}
-                    </p>
-                    ${quote.author ? `<p class="author">-  ${quote.author} <i class="fas fa-quote-right"></i></p>` : ``} 
-                </section>      
-            `);
-        }).catch(error => {
-            //code if request fails
-            console.error('Request failure: ', error);
-        });
+        // gets user input
+        const search_request = $('#out-modal .search').val();
 
 
-    }
-    
-
-    //executes get jokes HTTP request
-    function get_joke() {
-
-        // http API get request
-        fetch("https://v2.jokeapi.dev/joke/Any")
-        .then(response => response.json())
-        .then(data => {
-            //code if success
-            console.log(data);
+        //HTTP get request for the weather
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search_request}&units=metric&appid=a4c805281331539f19a213d83e19e0f3`)
+        .then(result => result.json()) //convert to JSON object
+        .then(data => { 
             
-            let joke = data;
+            //Displaying data in HTML
+            $('#out-modal .city').text(`${data.name} , ${data.sys.country}`);
+            $('#out-modal .weather').text(`${data.weather[0].description}`);
+            $('#out-modal .t_range').text(`${Math.round(data.main.temp_min)} °c / ${Math.round(data.main.temp_max)} °c`);
+            $('#out-modal .temp').text(`${Math.round(data.main.temp)} °c`);
+            
+            //creating date object and displaying it in the HTML doc
+            let d = new Date();
+            let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            let day = days[d.getDay()]; 
+            let date1 = d.getDate(); 
+            let month = months[d.getMonth()];
+            let year = d.getFullYear();
+            $('#out-modal .date').text(`${day} ${date1} ${month}, ${year}`);
 
-            if(joke.type == "single")
-            {
-                // executes if the joke type is a single setup 
-                $('#inspiration-modal .modal-body').html(`
-                    <section class="quotes">
-                        <h3>Here Is A Joke To Brighten Your Day!</h3>
-                        <p>
-                            <i class="fas fa-quote-left"></i>
-                            ${joke.joke}
-                            <i class="fas fa-quote-right"></i><
-                        </p>
-                    </section>      
-                `);
-            }
-            else
-            {
-                // displays joke in html doc it joke type is double setup
-                $('#inspiration-modal .modal-body').html(`
-                    <section class="quotes">
-                        <h3>Here Is A Joke To Brighten Your Day!</h3>
-                        <p><i class="fas fa-quote-left"></i> ${joke.setup}</p>
-                        <p>${joke.delivery} <i class="fas fa-quote-right"></i></p>
-                    </section>      
-                `);
-            }
-        }).catch(error => {
-            //code if request fails
-            console.error('Request failure: ', error);
+        })
+        .catch(function(error) {
+            // if there's an error, log it
+            console.log('Request failure ', error);
+
+            //Alerts user to enter correct information
+           alert("Please enter the correct information");
         });
-
+        
     }
-    
-    
+
+   
+ 
+
+
+
+
 });

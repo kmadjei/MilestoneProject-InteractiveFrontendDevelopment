@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!-- CSS style sheets -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/food.css">
     <link rel="stylesheet" href="assets/css/inspiration.css">
     <link rel="stylesheet" href="assets/css/outing.css">
+    <link rel="stylesheet" href="assets/css/challenge.css">
     <title>What do you feel for?</title>
 </head>
 <body>
@@ -36,11 +39,15 @@
                 Inspiration!
                 <i class="fas fa-bolt"></i>
             </button>
+            
+            <!-- Trigger/Open for the out-modal -->
             <button id="out">
                 <i class="fas fa-cloud-sun"></i>
                 To go out!
                 <i class="fas fa-hiking"></i>
             </button>
+
+            <!-- Trigger/Open for the Challenge-modal -->
             <button id="challenge">
                 <i class="fas fa-chess"></i>
                 Challenge!
@@ -87,6 +94,42 @@
 
         </div>
 
+        <!-- Out Modal -->
+        <div id="out-modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Find The Weather Forecast for where destination!</h2>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+
+                    <div class="container">
+                        <header>
+                            <input type="text" placeholder="Search for a city..." class="search">
+                            <input type="submit" value="Enter" class="enter">
+                        </header>
+                        
+                        <main>
+                            <div class="location">
+                                <div class="city"></div>
+                                <div class="date"></div>				
+                            </div>
+                            <div class="details">
+                                <div class="weather"></div>
+                                <div class="temp"></div>
+                                <div class="t_range"></div>
+                            </div>
+                        </main>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
 
     </main>
 
@@ -100,6 +143,7 @@
     <script src="assets/js/get-the-food.js"></script>
     <script src="assets/js/get-inspiration.js"></script>
     <script src="assets/js/get-outing.js"></script>
+    <script src="assets/js/get-challenge.js"></script>
 
 </body>
 </html>
