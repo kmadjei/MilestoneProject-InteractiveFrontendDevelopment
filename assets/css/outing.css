@@ -145,7 +145,7 @@
 }
 
 
-#out-modal main{
+#out-modal .main{
     flex: 1 1 100%;
     padding: 25px 15px 50px;
     display: flex;

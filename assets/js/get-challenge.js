@@ -81,8 +81,8 @@ $(document).ready(function(){
      // function to update user score and validate user's answer when called
     function validate_answer(userAnswer, correctAnswer) {
         
-        console.log("Users Answer : " + userAnswer);
-        console.log("Correct Answer : " + correctAnswer);
+        //console.log("Users Answer : " + userAnswer);
+        //console.log("Correct Answer : " + correctAnswer);
 
         if (correctAnswer.search(userAnswer) !== -1) { 
             // if user's answer  matches  correct answer
@@ -93,7 +93,7 @@ $(document).ready(function(){
             // if user's answer doesn't  match the correct answer
             // update incorrect score
             incrementWrongAnswer();
-            alert('Sorry the right answer was ' + correctAnswer + '. Try another question.');
+            alert('Sorry the right answer was: ' + correctAnswer + '. Try another question.');
         }
       
     }
@@ -111,6 +111,10 @@ $(document).ready(function(){
             alert('Please submit an answer');
         } else {
             validate_answer(userAnswer, correctAnswer);
+           
+            //clear input  field and get another challenge
+            $('#answer-box').val('');
+            get_challenge();
         }
         
         
@@ -127,6 +131,10 @@ $(document).ready(function(){
                 alert('Please submit an answer');
             } else {
                 validate_answer(userAnswer, correctAnswer);
+                
+                //clear input  field and get another challenge
+                $('#answer-box').val('');
+                get_challenge();
             }
         }
     });
