@@ -10,6 +10,7 @@
 This project is a single page web application that presents users with 4 choices asking what they feel like doing for the day. Each option, when selected, calls on to an application programming interface (API) service that serves the user with the data required to achieve their selected action goal.
 
 👉 [QUICK PREVIEW](https://kmadjei.github.io/MilestoneProject-InteractiveFrontendDevelopment/)
+
  
 ## UX
 
@@ -19,22 +20,24 @@ The project was designed to be used by any body.
 
 **Site Owner's Goal:** Provide an application to help people generate ideas of what to do for the day.
 
-
 ## Mockup and Wireframes
  
+**Mockup**
+---link
+
+**Wireframes**
+---links
 
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
- 
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+- Home / Landing page - presents users visiting the page with options to choose from
+    - Each selection button opens a pop up modal box, serving the users with the data they chose to seek
+- The Food option - opens a modal box with recipe, preparation steps, and a video guide for a random food
+- The Inspiration option - opens a modal box with a random quote and joke to boost the user's positive energy
+- The To Go Out option - opens a modal box that allows user's to look up current weather for their destination
+- The Challenge option - opens a modal box with a trivia game for the users to test their knowledge
 
 ### Features Left to Implement
 - Provide more options to choose from
@@ -48,14 +51,29 @@ In addition, you may also use this section to discuss plans for additional featu
 - [CSS](https://www.w3schools.com/CSS/default.asp)
     - The project uses **CSS** to create visually pleasing content.
 
-- [Font Awesome 5](https://fontawesome.com/)
-    - The project uses **Font Awesome** version 5 icons to provide better intuitive user experience.
-
 - [JavaScript](https://www.w3schools.com/js/default.asp)
     - **JavaScript** to provide dynamic contents for the project.
 
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation for UX/UI.
+
+- [Font Awesome 5](https://fontawesome.com/)
+    - The project uses **Font Awesome** version 5 icons to provide better intuitive user experience.
+
+- [The Mealdb API](https://www.themealdb.com/api.php)
+    - The project uses **the Mealdb API** to provides information on a random food, including recipes and preparation steps.
+
+- [FreeQuotes API](https://type.fit/api/quotes)
+    - The project uses **FreeQuotes API** to provide inspirational quotes for users.
+
+- [JokesAPI ](https://sv443.net/jokeapi/v2/)
+    - The project uses the **Jokes API**  to provide random jokes for users.
+
+- [Open-Weather API](https://openweathermap.org/api)
+    - The project uses the **Open-Weather API** to provide current weather forecast for any location users may search for.
+
+- [jService API](https://jservice.io/)
+    - The project uses the **jService API** provide trivia questions for users.
 
 
 ## Testing
