@@ -23,10 +23,10 @@ The project was designed to be used by any body.
 ## Mockup and Wireframes
  
 **Mockup**
----link
+<img src="https://github.com/kmadjei/MilestoneProject-InteractiveFrontendDevelopment/blob/main/assets/images/mockup.PNG?raw=true" alt="Mockup" width="400px" heigth="300px"> 
 
 **Wireframes**
----links
+- You can find the wireframes [here📺](https://github.com/kmadjei/MilestoneProject-InteractiveFrontendDevelopment/tree/main/assets/images/wireframes)
 
 
 ## Features
@@ -110,13 +110,20 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 ## Credits
 
-### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
-
 ### Media
-- The photos used in this site were obtained from ...
+
+- The photos used in this site were obtained from:
+    - Google images for the [Logo](https://learningthursdays.com/wp-content/uploads/2020/04/What-to-do.jpg )
+    - Google image for the [Weather modal box background](https://hdwallpaperim.com/wp-content/uploads/2017/08/23/459518-illustration-Firewatch-video_games-748x468.jpg)
+    - Unsplash for the [Inspiration modal box background](https://unsplash.com/photos/RCAUuu9MN2I). Image by Robert Kovacs
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- In order to complete this project I utilized the knowledge I acquired from the [JavaScript Essentials](https://github.com/Code-Institute-Solutions/JS-Essentials-Project/tree/master/13-Tidying%20Up) and [Interactive Frontend](https://github.com/Code-Institute-Solutions/InteractiveFrontendDevelopment-Resume/tree/master/03-SendingEmailsUsingEmailJS/06-sending_emails) walk-through project modules led by Matt Rudge, instructor at The Code Institute.
+
+**Other resources**
+
+- [How To Create a Modal Box](https://www.w3schools.com/howto/howto_css_modals.asp)
+- [5 Fun APIs for Your Next JavaScript Projects](https://javascript.plainenglish.io/5-fun-apis-for-your-next-javascript-projects-1834626864c)
+- [Waiting for multiple all API responses to complete with the vanilla JS Promise.all() method](https://gomakethings.com/waiting-for-multiple-all-api-responses-to-complete-with-the-vanilla-js-promise.all-method/)
 
