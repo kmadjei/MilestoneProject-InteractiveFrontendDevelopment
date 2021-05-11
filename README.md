@@ -23,7 +23,8 @@ The project was designed to be used by any body.
 ## Mockup and Wireframes
  
 **Mockup**
-<img src="https://github.com/kmadjei/MilestoneProject-InteractiveFrontendDevelopment/blob/main/assets/images/mockup.PNG?raw=true" alt="Mockup" width="400px" heigth="300px"> 
+
+<img src="https://github.com/kmadjei/MilestoneProject-InteractiveFrontendDevelopment/blob/main/assets/images/mockup.PNG?raw=true" alt="Mockup" width="500px" heigth="400px"> 
 
 **Wireframes**
 - You can find the wireframes [here📺](https://github.com/kmadjei/MilestoneProject-InteractiveFrontendDevelopment/tree/main/assets/images/wireframes)
