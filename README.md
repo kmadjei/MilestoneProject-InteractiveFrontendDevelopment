@@ -115,7 +115,7 @@ In addition, if it is not obvious, you should also describe how to run your code
 - The photos used in this site were obtained from:
     - Google images for the [Logo](https://learningthursdays.com/wp-content/uploads/2020/04/What-to-do.jpg )
     - Google image for the [Weather modal box background](https://hdwallpaperim.com/wp-content/uploads/2017/08/23/459518-illustration-Firewatch-video_games-748x468.jpg)
-    - Unsplash for the [Inspiration modal box background](https://unsplash.com/photos/RCAUuu9MN2I). Image by Robert Kovacs
+    - Unsplash for the [Inspiration modal box background](https://unsplash.com/photos/RCAUuu9MN2I). Image by Robert Kovacs.
 
 ### Acknowledgements
 
@@ -126,4 +126,4 @@ In addition, if it is not obvious, you should also describe how to run your code
 - [How To Create a Modal Box](https://www.w3schools.com/howto/howto_css_modals.asp)
 - [5 Fun APIs for Your Next JavaScript Projects](https://javascript.plainenglish.io/5-fun-apis-for-your-next-javascript-projects-1834626864c)
 - [Waiting for multiple all API responses to complete with the vanilla JS Promise.all() method](https://gomakethings.com/waiting-for-multiple-all-api-responses-to-complete-with-the-vanilla-js-promise.all-method/)
-
+- [Build a Weather app using HTML, CSS & JavaScript in 2020](https://www.youtube.com/watch?v=n4dtwWgRueI&t=1212s&ab_channel=TylerPotts)
