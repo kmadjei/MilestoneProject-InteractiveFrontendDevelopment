@@ -1,21 +1,28 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 ![CBC Logo](https://canadianbusinesscollege.com/wp-content/uploads/2020/09/CBC-New-Logo-Website.png)
 
-# Your Project's Name
+# Project - Interactive Frontend Development
 
-One or two paragraphs providing an overview of your project.
+**Project purpose:** Presentation of interactive data for the users.
 
-Essentially, this part is your sales pitch.
-👉 
+## Project Description
+
+This project is a single page web application that presents users with 4 choices asking what they feel like doing for the day. Each option, when selected, calls on to an application programming interface (API) service that serves the user with the data required to achieve their selected action goal.
+
+👉 [QUICK PREVIEW](https://kmadjei.github.io/MilestoneProject-InteractiveFrontendDevelopment/)
  
 ## UX
+
+The project was designed to be used by any body. 
+
+**User's Goal:** To come up with an idea for what to do for the day or in the moment of indecision.
+
+**Site Owner's Goal:** Provide an application to help people generate ideas of what to do for the day.
+
+
+## Mockup and Wireframes
  
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
-
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
 ## Features
 
@@ -30,14 +37,25 @@ For some/all of your features, you may choose to reference the specific project 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ### Features Left to Implement
-- Another feature idea
+- Provide more options to choose from
+- Expand on the functionality of the challenge trivia to provide better progress feedback for users
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+- [HTML](https://www.w3schools.com/html/default.asp)
+    - **HTML** is used to build the foundational elements for the project.
+
+- [CSS](https://www.w3schools.com/CSS/default.asp)
+    - The project uses **CSS** to create visually pleasing content.
+
+- [Font Awesome 5](https://fontawesome.com/)
+    - The project uses **Font Awesome** version 5 icons to provide better intuitive user experience.
+
+- [JavaScript](https://www.w3schools.com/js/default.asp)
+    - **JavaScript** to provide dynamic contents for the project.
 
 - [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+    - The project uses **JQuery** to simplify DOM manipulation for UX/UI.
 
 
 ## Testing
