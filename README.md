@@ -160,7 +160,7 @@ To  view it 👉 [Click Here](https://kmadjei.github.io/MilestoneProject-Interac
 10.  After the steps above,  the project can now be pushed to the repository with the command ```git push```
 11. On the github repository of the project, click on the settings
 
-    ![Github repo settings](https://content.codecademy.com/courses/freelance-1/unit-3/git%20setup/githubsettings.png)
+    ![Github repo settings](assets/images/githubpagessection.webp)
 
 12. Within Settings, navigate to the Source section within the Github Pages section.
 13.  From the dropdown menu, select master or main branch and then click Save.
