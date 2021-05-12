@@ -20,7 +20,7 @@ The project was designed to be used by any body.
 
 **Site Owner's Goal:** Provide an application to help people generate ideas of what to do for the day.
 
-## Mockup and Wireframes
+### Mockup and Wireframes
  
 **Mockup**
 
@@ -134,16 +134,43 @@ The project was designed to be used by any body.
 
 
 
+
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+The project is hosted on Github pages after uploading it to Github via Git Bash terminal. 
+To  view it 👉 [Click Here](https://kmadjei.github.io/MilestoneProject-InteractiveFrontendDevelopment/)
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
+### Deploying To GitHub Pages
 
-In addition, if it is not obvious, you should also describe how to run your code locally.
+1. To deploy to github, a new repository was created for the application.
+2. Make sure to have downloaded [Git Bash](https://www.atlassian.com/git/tutorials/git-bash)
+3. Go to the root folder directory of the app on the local computer.
+4. Right click it and select ***Git Bash here** to open the terminal.
+5. Initialize the project directory by typing ```git init``` in the terminal and pressing the Enter key.
+6. Copy the url of the Github repository created for the app.
+7. On the terminal add the file to url as a remote with the command 
+    ```git remote add origin <paste your github URL here> ```
+
+8. Next, commit all your changes to git with these commands
+    ```bash
+    git add . 
+    git commit -m "Your message here. Example <First commit>"
+    ```
+9. Create the main branch of your repository with the command ```git branch -M main```
+10.  After the steps above,  the project can now be pushed to the repository with the command ```git push```
+11. On the github repository of the project, click on the settings
+
+    ![Github repo settings](https://content.codecademy.com/courses/freelance-1/unit-3/git%20setup/githubsettings.png)
+
+12. Within Settings, navigate to the Source section within the Github Pages section.
+13.  From the dropdown menu, select master or main branch and then click Save.
+
+    ![Github Settings menu](https://content.codecademy.com/courses/freelance-1/unit-3/git%20setup/githubpagessection.png)
+
+14. Now all the apps can be viewed live at ``` http://<username>.github.io/<repository-name> ```
+
+
+### Deploy On Your Local PC
 
 
 ## Credits
