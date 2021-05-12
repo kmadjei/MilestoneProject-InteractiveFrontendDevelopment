@@ -142,8 +142,6 @@ To  view it 👉 [Click Here](https://kmadjei.github.io/MilestoneProject-Interac
 
 ### Deploying To GitHub Pages
 
- <img src="assets/images/githubpagessection.webp" alt="Github Settings menu" width="500px" heigth="400px"> 
-
 1. To deploy to github, a new repository was created for the application.
 2. Make sure to have downloaded [Git Bash](https://www.atlassian.com/git/tutorials/git-bash)
 3. Go to the root folder directory of the app on the local computer.
@@ -165,9 +163,9 @@ To  view it 👉 [Click Here](https://kmadjei.github.io/MilestoneProject-Interac
     ![Github repo settings](https://content.codecademy.com/courses/freelance-1/unit-3/git%20setup/githubsettings.png)
 
 12. Within Settings, navigate to the Source section within the Github Pages section.
-13.  From the dropdown menu, select master or main branch and then click Save.
+13.  From the dropdown menu, select master or main branch and then click save.
 
-    <img src="assets/images/githubpagessection.webp" alt="Github Settings menu" width="500px" heigth="400px">
+ <img src="assets/images/githubpagessection.webp" alt="Github Settings menu" width="500px" heigth="400px"> 
 
 14. Now all the apps can be viewed live at ``` http://<username>.github.io/<repository-name> ```
 
@@ -177,11 +175,14 @@ To  view it 👉 [Click Here](https://kmadjei.github.io/MilestoneProject-Interac
 1. To deploy the application on your local computer, navigate to the main page of the repository.
 2. Above the list of files, click **Code** button
 
-    ![Code button](https://docs.github.com/assets/images/help/repository/code-button.png)
+
+    <img src="https://docs.github.com/assets/images/help/repository/code-button.png" alt="Code button" width="500px" heigth="400px"> 
+
 
 3. Select **Download Zip**, to download the zip file to your PC.
 
-    ![Zip Download](https://docs.github.com/assets/images/help/repository/open-with-desktop.png)
+    <img src="https://docs.github.com/assets/images/help/repository/open-with-desktop.png" alt="Zip Download" width="500px" heigth="400px"> 
+
 
 4. Once the folder is downloaded, you can unzip it and click on the index.html file to deploy it on your local browser.
 
