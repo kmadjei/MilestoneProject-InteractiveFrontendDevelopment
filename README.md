@@ -160,20 +160,28 @@ To  view it 👉 [Click Here](https://kmadjei.github.io/MilestoneProject-Interac
 10.  After the steps above,  the project can now be pushed to the repository with the command ```git push```
 11. On the github repository of the project, click on the settings
 
-    ![Github repo settings](assets/images/githubpagessection.webp)
+    ![Github repo settings](https://content.codecademy.com/courses/freelance-1/unit-3/git%20setup/githubsettings.png)
 
 12. Within Settings, navigate to the Source section within the Github Pages section.
 13.  From the dropdown menu, select master or main branch and then click Save.
 
-    ![Github Settings menu](https://content.codecademy.com/courses/freelance-1/unit-3/git%20setup/githubpagessection.webp)
-
-    <img src="https://content.codecademy.com/courses/freelance-1/unit-3/git%20setup/githubpagessection.png" alt="[Github Settings menu" width="500px" heigth="400px"> 
+    ![Github Settings menu](assets/images/githubpagessection.webp)
 
 14. Now all the apps can be viewed live at ``` http://<username>.github.io/<repository-name> ```
 
 
 ### Deploy On Your Local PC
 
+1. To deploy the application on your local computer, navigate to the main page of the repository.
+2. Above the list of files, click **Code** button
+
+    ![Code button](https://docs.github.com/assets/images/help/repository/code-button.png)
+
+3. Select **Download Zip**, to download the zip file to your PC.
+
+    ![Zip Download](https://docs.github.com/assets/images/help/repository/open-with-desktop.png)
+
+4. Once the folder is downloaded, you can unzip it and click on the index.html file to deploy it on your local browser.
 
 ## Credits
 
