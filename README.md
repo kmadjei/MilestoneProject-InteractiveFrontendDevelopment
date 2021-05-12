@@ -89,7 +89,7 @@ The project was designed to be used by any body.
     3. Verify no errors were found
         1. Outing.css file returned errors for the `#out-modal .weather`
             1. Corrected font-weight value to 700
-            2. Corrected th text-shadow value to ```0 3px rgb(0, 0, 0, 0.4)```
+            2. Corrected the text-shadow value to ```0 3px rgb(0, 0, 0, 0.4)```
             3. Tested the CSS code again to verify there was no more errors
 
 3. Selection functionality test:
