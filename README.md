@@ -79,7 +79,18 @@ The project was designed to be used by any body.
 
 ## Testing
 
+1.  [Markup Validation Service](https://validator.w3.org/#validate_by_input)
+    1. Go to the W3c Markup Validation Site
+    2. Copy and paste HTML content for the index.html file to verify there are no errors and warnings
 
+2. [CSS Validation](https://jigsaw.w3.org/css-validator/#validate_by_input)
+    i. Go to the W3c CSS Validation Site 
+    ii. Copy and past the CSS contents for each style sheet on the site validator
+    iii. Verify no errors were found
+        a. Outing.css file returned errors for the '''#out-modal .weather'''
+            1. Corrected font-weight value to 700
+            2. Corrected th text-shadow value to ```0 3px rgb(0, 0, 0, 0.4)```
+      
 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
