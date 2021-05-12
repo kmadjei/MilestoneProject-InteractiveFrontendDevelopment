@@ -167,6 +167,8 @@ To  view it 👉 [Click Here](https://kmadjei.github.io/MilestoneProject-Interac
 
     ![Github Settings menu](https://content.codecademy.com/courses/freelance-1/unit-3/git%20setup/githubpagessection.png)
 
+    <img src="https://content.codecademy.com/courses/freelance-1/unit-3/git%20setup/githubpagessection.png" alt="[Github Settings menu" width="500px" heigth="400px"> 
+
 14. Now all the apps can be viewed live at ``` http://<username>.github.io/<repository-name> ```
 
 
