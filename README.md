@@ -24,7 +24,7 @@ The project was designed to be used by any body.
  
 **Mockup**
 
-<img src="https://github.com/kmadjei/MilestoneProject-InteractiveFrontendDevelopment/blob/main/assets/images/mockup.PNG?raw=true" alt="Mockup" width="500px" heigth="4git00px"> 
+<img src="https://github.com/kmadjei/MilestoneProject-InteractiveFrontendDevelopment/blob/main/assets/images/mockup.PNG?raw=true" alt="Mockup" width="500px" heigth="400px"> 
 
 **Wireframes**
 - You can find the wireframes [here📺](https://github.com/kmadjei/MilestoneProject-InteractiveFrontendDevelopment/tree/main/assets/images/wireframes)
@@ -117,6 +117,17 @@ The project was designed to be used by any body.
         5. Try submitting the right answer, confirm the correct score is updated and user receives feedback for the answer
         6. Try submitting the wrong answer, confirm the incorrect score is updated and user receives feedback for the answer
 
+4. Chrome Dev Tools
+    1. Responsive tests:
+        1. Open the web application in google chrome 
+        2. Right click the web page a select inspection to get access to dev tools
+        3. Change the different views of the web application and confirm that the view adapts to different screen sizes
+    2. Lighthouse 
+        1. Open the lighthouse tool
+        2. Select the generate report option for desktop to verify web page performance and list of solutions to improve it
+        <img src="assets/images/google-lighthouse/Chrome Lighthouse - desktop report.PNG" alt="Mockup" width="500px" heigth="400px"> 
+        3. Select the generate report option for mobiln to verify web page performance and list of solutions to improve it
+        <img src="assets/images/google-lighthouse/Chrome Lighthouse - mobile report.PNG" alt="Mockup" width="500px" heigth="400px"> 
 
       
 
