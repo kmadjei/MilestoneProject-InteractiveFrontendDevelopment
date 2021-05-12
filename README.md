@@ -125,9 +125,13 @@ The project was designed to be used by any body.
     2. Lighthouse 
         1. Open the lighthouse tool
         2. Select the generate report option for desktop to verify web page performance and list of solutions to improve it
-        <img src="assets/images/google-lighthouse/Chrome Lighthouse - desktop report.PNG" alt="Mockup" width="500px" heigth="400px"> 
-        3. Select the generate report option for mobiln to verify web page performance and list of solutions to improve it
-        <img src="assets/images/google-lighthouse/Chrome Lighthouse - mobile report.PNG" alt="Mockup" width="500px" heigth="400px"> 
+
+        <img src="assets/images/google-lighthouse/Chrome Lighthouse - desktop report.PNG" alt="Mockup" width="300px" heigth="400px"> 
+
+        3. Select the generate report option for mobile to verify web page performance and list of solutions to improve it
+
+        <img src="assets/images/google-lighthouse/Chrome Lighthouse - mobile report.PNG" alt="Mockup" width="300px" heigth="400px"> 
+
 
       
 
