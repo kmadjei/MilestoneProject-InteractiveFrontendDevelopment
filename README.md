@@ -24,7 +24,7 @@ The project was designed to be used by any body.
  
 **Mockup**
 
-<img src="https://github.com/kmadjei/MilestoneProject-InteractiveFrontendDevelopment/blob/main/assets/images/mockup.PNG?raw=true" alt="Mockup" width="500px" heigth="400px"> 
+<img src="https://github.com/kmadjei/MilestoneProject-InteractiveFrontendDevelopment/blob/main/assets/images/mockup.PNG?raw=true" alt="Mockup" width="500px" heigth="4git00px"> 
 
 **Wireframes**
 - You can find the wireframes [here📺](https://github.com/kmadjei/MilestoneProject-InteractiveFrontendDevelopment/tree/main/assets/images/wireframes)
@@ -53,7 +53,7 @@ The project was designed to be used by any body.
     - The project uses **CSS** to create visually pleasing content.
 
 - [JavaScript](https://www.w3schools.com/js/default.asp)
-    - **JavaScript** to provide dynamic contents for the project.
+    - **JavaScript** is used to provide dynamic contents for the project.
 
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation for UX/UI.
@@ -78,6 +78,8 @@ The project was designed to be used by any body.
 
 
 ## Testing
+
+
 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
@@ -128,3 +130,5 @@ In addition, if it is not obvious, you should also describe how to run your code
 - [5 Fun APIs for Your Next JavaScript Projects](https://javascript.plainenglish.io/5-fun-apis-for-your-next-javascript-projects-1834626864c)
 - [Waiting for multiple all API responses to complete with the vanilla JS Promise.all() method](https://gomakethings.com/waiting-for-multiple-all-api-responses-to-complete-with-the-vanilla-js-promise.all-method/)
 - [Build a Weather app using HTML, CSS & JavaScript in 2020](https://www.youtube.com/watch?v=n4dtwWgRueI&t=1212s&ab_channel=TylerPotts)
+- [Markup Validation Service](https://validator.w3.org/)
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
