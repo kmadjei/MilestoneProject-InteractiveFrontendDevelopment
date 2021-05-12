@@ -84,12 +84,40 @@ The project was designed to be used by any body.
     2. Copy and paste HTML content for the index.html file to verify there are no errors and warnings
 
 2. [CSS Validation](https://jigsaw.w3.org/css-validator/#validate_by_input)
-    i. Go to the W3c CSS Validation Site 
-    ii. Copy and past the CSS contents for each style sheet on the site validator
-    iii. Verify no errors were found
-        a. Outing.css file returned errors for the '''#out-modal .weather'''
+    1. Go to the W3c CSS Validation Site 
+    2. Copy and past the CSS contents for each style sheet on the site validator
+    3. Verify no errors were found
+        1. Outing.css file returned errors for the `#out-modal .weather`
             1. Corrected font-weight value to 700
             2. Corrected th text-shadow value to ```0 3px rgb(0, 0, 0, 0.4)```
+            3. Tested the CSS code again to verify there was no more errors
+
+3. Selection functionality test:
+    1. **Food** button
+        1. Try selecting the food button and confirm Modal box pops up in the front page
+        2. Click on the close button to verify modal box disappears from the screen
+        3. Verify content displays data requested from API or indicates error message when food button is clicked
+        4. Repeat previous step for the `GET MORE` button
+    2. **Inspiration** button
+        1. Click on the button to confirm modal box opens and displays in the front of the screen
+        2. Click on the close icon to confirm modal box disappears from the screen
+        3. Click on the `GET MORE` button to confirm feedback data from API request is successful or failed
+        4. Confirm the display of contents when the modal box is open
+    3. **To Go Out!** button
+        1. Click on the button to confirm modal box opens and displays in the front of the screen
+        2. Click on the close icon to confirm modal box disappears from the screen
+        3. Try to search for a city like "Toronto, ON" and confirm feedback information for the current weather is displayed for user
+        4. Try submitting or hitting the enter key for an empty input and confirm message error for HTTP request
+        5. Try submitting an illegal city name and confirm error feedback
+    4. **Challenge** button
+        1. Click on the button to confirm modal box opens and displays in the front of the screen
+        2. Click on the close icon to confirm modal box disappears from the screen
+        3. Confirm the modal box is filled with trivia information from the HTTP request
+        4. Try submitting an empty for and verify that a validation message for answering the question pops up
+        5. Try submitting the right answer, confirm the correct score is updated and user receives feedback for the answer
+        6. Try submitting the wrong answer, confirm the incorrect score is updated and user receives feedback for the answer
+
+
       
 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
