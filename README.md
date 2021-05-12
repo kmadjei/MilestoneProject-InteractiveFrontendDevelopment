@@ -165,7 +165,7 @@ To  view it 👉 [Click Here](https://kmadjei.github.io/MilestoneProject-Interac
 12. Within Settings, navigate to the Source section within the Github Pages section.
 13.  From the dropdown menu, select master or main branch and then click Save.
 
-    ![Github Settings menu](https://content.codecademy.com/courses/freelance-1/unit-3/git%20setup/githubpagessection.png)
+    ![Github Settings menu](https://content.codecademy.com/courses/freelance-1/unit-3/git%20setup/githubpagessection.webp)
 
     <img src="https://content.codecademy.com/courses/freelance-1/unit-3/git%20setup/githubpagessection.png" alt="[Github Settings menu" width="500px" heigth="400px"> 
 
