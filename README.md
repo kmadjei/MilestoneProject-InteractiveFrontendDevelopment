@@ -142,6 +142,8 @@ To  view it 👉 [Click Here](https://kmadjei.github.io/MilestoneProject-Interac
 
 ### Deploying To GitHub Pages
 
+ <img src="assets/images/githubpagessection.webp" alt="Github Settings menu" width="500px" heigth="400px"> 
+
 1. To deploy to github, a new repository was created for the application.
 2. Make sure to have downloaded [Git Bash](https://www.atlassian.com/git/tutorials/git-bash)
 3. Go to the root folder directory of the app on the local computer.
@@ -165,8 +167,7 @@ To  view it 👉 [Click Here](https://kmadjei.github.io/MilestoneProject-Interac
 12. Within Settings, navigate to the Source section within the Github Pages section.
 13.  From the dropdown menu, select master or main branch and then click Save.
 
-    <img src="assets/images/githubpagessection.webp" alt="Github Settings menu" width="500px" heigth="400px"> 
-    ![Github Settings menu](assets/images/githubpagessection.webp)
+    <img src="assets/images/githubpagessection.webp" alt="Github Settings menu" width="500px" heigth="400px">
 
 14. Now all the apps can be viewed live at ``` http://<username>.github.io/<repository-name> ```
 
