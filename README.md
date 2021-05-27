@@ -198,6 +198,7 @@ To  view it 👉 [Click Here](https://kmadjei.github.io/MilestoneProject-Interac
 ### Acknowledgements
 
 - In order to complete this project I utilized the knowledge I acquired from the [JavaScript Essentials](https://github.com/Code-Institute-Solutions/JS-Essentials-Project/tree/master/13-Tidying%20Up) and [Interactive Frontend](https://github.com/Code-Institute-Solutions/InteractiveFrontendDevelopment-Resume/tree/master/03-SendingEmailsUsingEmailJS/06-sending_emails) walk-through project modules led by Matt Rudge, instructor at The Code Institute.
+- I am also grateful for the guidance of Anmar Jarjees, my instructor at the Canadian Business College, for showing us ways to challenge and improve my skills
 
 **Other resources**
 
